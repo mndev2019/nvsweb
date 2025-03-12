@@ -10,7 +10,7 @@ const Register = () => {
     const [selectedStatus, setSelectedStatus] = useState("Serving");
     return (
         <>
-            <section className="signin ">
+            <section className="signin  overflow-hidden">
                 <div className="container max-w-full h-full">
                     <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
                         <div className="col-span-1 flex flex-col items-center  text-center">

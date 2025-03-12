@@ -1,8 +1,9 @@
 import signin from '../assets/Image/signin.png';
 import logo from '../assets/Image/logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Createaccount = () => {
+    const navigate = useNavigate();
     return (
         <>
             <section className="account">
@@ -61,7 +62,7 @@ const Createaccount = () => {
                                         className='w-full py-2 px-3 border border-[#0000001A] rounded-[10px] shadow-[0px_4px_62px_0px_#99ABC62E]' />
                                 </div>
                                 <div className='mt-7'>
-                                    <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-2'>Sign Up</button>
+                                    <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-2' onClick={() => navigate('/register')}>Sign Up</button>
                                 </div>
                                 <div className='mt-2'>
                                     <p className="text-[14px] font-[400] text-[#212121] poppins">

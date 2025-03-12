@@ -13,7 +13,7 @@ const Otp = () => {
                 <div className="container max-w-full h-full">
                     <div className="grid md:grid-cols-2 grid-cols-1   h-full items-center">
                         <div className="col-span-1 flex flex-col items-center  text-center">
-                            <div className="">
+                            <div className="w-full px-5">
                                 <img src={logo} alt='image' className='md:h-[120px] h-[80px] mx-auto' />
                                 <h2 className='md:text-[30px] text-[20px] inter font-[700] md:mt-8 mt-5'>
                                     OTP Verification
