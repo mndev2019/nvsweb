@@ -28,10 +28,10 @@ const News = () => {
                 <div className="container mx-auto px-5">
                     <div className="grid grid-cols-1">
                         <div className="col-span-1 ">
-                            <div className="w-full flex justify-between py-3">
+                            <div className="w-full flex justify-between  md:py-3 py-1">
                                 <Titlecomp title="Technology News" />
                                 <div className="flex gap-3 items-center mt-2">
-                                    <p className="inter font-[600] text-[18px] text-[#0B067C]">
+                                    <p className="inter font-[600] md:text-[18px] text-[15px] text-[#0B067C]">
                                         See All
                                     </p>
                                     

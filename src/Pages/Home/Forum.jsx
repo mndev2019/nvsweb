@@ -14,51 +14,51 @@ const Forum = () => {
         <>
             <section className="w-full pb-4">
                 <div className="container mx-auto px-5">
-                    <div className="grid grid-cols-1 py-3">
+                    <div className="grid grid-cols-1 md:py-3 py-1">
                         <div className="col-span-1">
                             <div className="w-full flex justify-between">
                                 <Titlecomp title="Forum" />
                                 <div className="flex gap-3 items-center mt-2">
-                                    <p className="inter font-[600] text-[18px] text-[#0B067C]">
+                                    <p className="inter font-[600] md:text-[18px] text-[15px] text-[#0B067C]">
                                         See All
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 mt-3 bg-white rounded-[14px] p-4 ">
+                    <div className="grid grid-cols-1 mt-3 bg-white rounded-[14px] md:p-4 p-3 ">
                         <div className="flex items-center gap-4">
                             <img src={user} alt="User" className="h-[66px] w-[66px] rounded-full" />
                             <div>
-                                <h3 className="text-[18px] font-[500] poppins">Rahul Kumar</h3>
+                                <h3 className="md:text-[18px] text-[15px] font-[500] poppins">Rahul Kumar</h3>
                                 <div className="flex gap-2 items-center">
-                                    <CiCalendar className="text-[20px] text-[#535974]" />
-                                    <p className="text-[14px] text-[#535974] font-[400] inter">Feb 20, 2025 • 01:00 PM </p>
+                                    <CiCalendar className="md:text-[20px] text-[18px] text-[#535974]" />
+                                    <p className="md:text-[14px] text-[12px] text-[#535974] font-[400] inter">Feb 20, 2025 • 01:00 PM </p>
 
                                 </div>
-                                <p className="text-[14px] text-[#767F8C] font-[400] inter">
+                                <p className="md:text-[14px] text-[12px] text-[#767F8C] font-[400] inter">
                                     by Equitymaster</p>
                             </div>
                         </div>
-                        <div className="mt-4">
-                            <h4 className="text-[20px] font-[600] inter">Breaking News</h4>
-                            <p className="text-[14px] inter font-[400] text-[#535974] mt-2">
+                        <div className="md:mt-4 mt-3">
+                            <h4 className="md:text-[20px] text-[18px] font-[600] inter">Breaking News</h4>
+                            <p className="md:text-[14px] text-[12px] inter font-[400] text-[#535974] mt-2 text-justify">
                                 Lorem ipsum dolor sit amet consectetur. Dolor id morbi aliquam praesent nam et consectetur sagittis quam.. Urna cras in libero egestas sit non ac lobortis pellentesque.. Pulvinar semper donec etiam lobortis amet vulputate tellus nisl.. Nibh aliquam faucibus consectetur eget nunc laoreet..
                             </p>
                         </div>
                         <div className="mt-4">
-                            <img src={forum1} alt="News" className="w-full h-[322px] rounded-lg object-cover" />
+                            <img src={forum1} alt="News" className="w-full md:h-[322px] h-auto rounded-lg object-cover" />
                         </div>
                         <div className="flex justify-between items-center mt-4 text-gray-500">
-                            <div className="flex items-center gap-5">
+                            <div className="flex items-center md:gap-5 gap-3">
                                 <div className="flex  gap-1 items-center">
-                                    <BiLike className="text-[23px]" /> <span className="inter text-[#535974] font-[500] text-[16px]">25 Likes</span>
+                                    <BiLike className="md:text-[23px] text-[20px]" /> <span className="inter text-[#535974] font-[500] md:text-[16px] text-[12px]">25 Likes</span>
                                 </div>
                                 <div className="flex  gap-1 items-center">
-                                    <TbMessageDots className="text-[23px]" /> <span className="inter text-[#535974] font-[500] text-[16px]">14 comments</span>
+                                    <TbMessageDots className="md:text-[23px] text-[20px]" /> <span className="inter text-[#535974] font-[500] md:text-[16px] text-[12px]">14 comments</span>
                                 </div>
                                 <div className="flex  gap-1 items-center">
-                                    <PiShareFat className="text-[23px]" /> <span className="inter text-[#535974] font-[500] text-[16px]">14 Shares</span>
+                                    <PiShareFat className="md:text-[23px] text-[20px]" /> <span className="inter text-[#535974] font-[500] md:text-[16px] text-[12px]">14 Shares</span>
                                 </div>
                             </div>
                         </div>

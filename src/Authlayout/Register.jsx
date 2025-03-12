@@ -10,17 +10,17 @@ const Register = () => {
     const [selectedStatus, setSelectedStatus] = useState("Serving");
     return (
         <>
-            <section className=" ">
+            <section className="signin ">
                 <div className="container max-w-full h-full">
-                    <div className="grid grid-cols-2  h-full items-center">
+                    <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
                         <div className="col-span-1 flex flex-col items-center  text-center">
-                            <div className="">
+                            <div className=" ">
                                 <img src={logo} alt='image' className='h-[120px] mx-auto' />
-                                <h2 className='text-[30px] inter font-[700] mt-8'>
+                                <h2 className='md:text-[30px] text-[20px] inter font-[700] md:mt-8 mt-4'>
                                     Register as
                                 </h2>
 
-                                <div className='flex gap-5 mt-4'>
+                                <div className='flex gap-5 mt-4 '>
                                     {
                                         ["Alumni", "Faculty", "student"].map((itm, index) => (
                                             <>
@@ -214,7 +214,7 @@ const Register = () => {
                         </div>
 
 
-                        <div className="col-span-1 w-full h-full">
+                        <div className="col-span-1 w-full h-full md:block hidden">
                             <img src={signin} alt="Signin" className="w-full h-screen  object-cover" />
                         </div>
                     </div>

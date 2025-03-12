@@ -1,6 +1,6 @@
 import signin from '../assets/Image/signin.png';
 import logo from '../assets/Image/logo.png'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Signin = () => {
     const navigate = useNavigate();
     return (
@@ -10,7 +10,7 @@ const Signin = () => {
                     <div className="col-span-1 flex flex-col items-center  text-center md:px-0 px-5">
                         <div className="">
                             <img src={logo} alt='image' className='md:h-[120px] h-[80px] mx-auto' />
-                            <h2 className='md:text-[30px] text-[20px] inter font-[700] mt-8'>
+                            <h2 className='md:text-[30px] text-[20px] inter font-[700] md:mt-8 mt-5'>
                                 Sign in to your account
                             </h2>
                             <p className='inter md:text-[18px] text-[14px] font-[400] text-[#8B7C7C] md:py-5 py-3'>
@@ -28,11 +28,13 @@ const Signin = () => {
                                     className='w-full py-3 px-3 border border-[#0000001A] rounded-[10px] shadow-[0px_4px_62px_0px_#99ABC62E]' />
                             </div>
                             <div className='mt-10'>
-                                <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={()=> navigate('/otp')}>Sign In</button>
+                                <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={() => navigate('/otp')}>Sign In</button>
                             </div>
                             <div className='mt-4'>
                                 <p className="text-[14px] font-[400] text-[#212121] poppins">
-                                    Don&apos;t have an account?{" "}
+                                    <Link to={'/account'}>
+                                        Don&apos;t have an account?{" "}
+                                    </Link>
                                     <a href="/" className="text-[#0B067C] font-semibold ">
                                         Sign up
                                     </a>

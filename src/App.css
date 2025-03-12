@@ -23,6 +23,11 @@
     padding: 97px 0;
   }
 }
+@media(max-width:768px){
+  .account{
+    padding-top: 10px 0;
+  }
+}
 
 
 /* banner */

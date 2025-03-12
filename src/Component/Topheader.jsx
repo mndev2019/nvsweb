@@ -12,8 +12,8 @@ const Topheader = ({ toggleSidebar }) => {
         <>
             <section className="pt-4 px-4">
                 <div className="">
-                    <div className="grid grid-cols-12 gap-4">
-                        <div className="col-span-8">
+                    <div className="grid md:grid-cols-12 grid-cols-1 gap-4">
+                        <div className="md:col-span-8 col-span-1">
                             <div className="flex items-center  gap-4">
                                 <CiMenuBurger
                                     className="text-black text-[20px] lg:hidden block cursor-pointer"
@@ -24,17 +24,17 @@ const Topheader = ({ toggleSidebar }) => {
                                     <input
                                         type="text"
                                         placeholder="Search here ..."
-                                        className="w-full poppins py-4 pl-10 pr-4 rounded-full bg-white  focus:outline-none focus:ring-2 focus:ring-[#003366]"
+                                        className="w-full poppins md:py-4 py-2 pl-10 pr-4 rounded-full bg-white  focus:outline-none focus:ring-2 focus:ring-[#003366]"
                                     />
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4">
+                        <div className="md:col-span-4 col-span-1">
                             <div className="flex items-center justify-evenly bg-white rounded-full py-1 gap-1 px-1">
-                                <div className="border border-[#DEDEDE] rounded-[100px] lg:px-1 xl:px-5 py-2">
+                                <div className="border border-[#DEDEDE] rounded-[100px] px-3 md:px-1 xl:px-5 py-2">
                                     <img src={notification} alt="notification" />
                                 </div>
-                                <div className="border border-[#DEDEDE] rounded-[100px] lg:px-1 xl:px-5 py-2">
+                                <div className="border border-[#DEDEDE] rounded-[100px]  px-3 md:px-1 xl:px-5 py-2">
                                     <img src={message} alt="notification" />
                                 </div>
 

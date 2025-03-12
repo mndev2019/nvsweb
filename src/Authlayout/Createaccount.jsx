@@ -1,20 +1,21 @@
 import signin from '../assets/Image/signin.png';
 import logo from '../assets/Image/logo.png'
+import { Link } from 'react-router-dom';
 
 const Createaccount = () => {
     return (
         <>
-            <section className=" ">
+            <section className="account">
                 <div className="container max-w-full h-full">
-                    <div className="grid grid-cols-2  h-full items-center">
+                    <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
                         <div className="col-span-1 flex flex-col items-center  text-center">
                             <div className="">
-                                <img src={logo} alt='image' className='h-[120px] mx-auto' />
-                                <h2 className='text-[30px] inter font-[700] mt-5'>
+                                <img src={logo} alt='image' className='md:h-[120px] h-[80px] mx-auto' />
+                                <h2 className='md:text-[30px] text-[20px] inter font-[700] mt-5'>
                                     Create an account
                                 </h2>
                                 <div className=''>
-                                    <p className='inter text-[18px] font-[400] text-[#8B7C7C] '>
+                                    <p className='inter md:text-[18px] text-[14px] font-[400] text-[#8B7C7C] '>
                                         please enter your all details
 
                                     </p>
@@ -64,17 +65,19 @@ const Createaccount = () => {
                                 </div>
                                 <div className='mt-2'>
                                     <p className="text-[14px] font-[400] text-[#212121] poppins">
-                                    Already have an account?{" "}
-                                        <a href="/signup" className="text-[#0B067C] font-semibold ">
+                                        <Link to={'/signin'}>
+                                            Already have an account?{" "}
+                                        </Link>
+                                        <Link to={'/home'} className="text-[#0B067C] font-semibold ">
                                             Sign up
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div className="col-span-1 w-full h-full">
+                        <div className="col-span-1 w-full h-full md:block hidden">
                             <img src={signin} alt="Signin" className="w-full h-screen  object-cover" />
                         </div>
                     </div>
