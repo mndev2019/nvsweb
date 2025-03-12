@@ -6,7 +6,7 @@ const Signin = () => {
     return (
         <section className=" ">
             <div className="container max-w-full h-full">
-                <div className="grid grid-cols-2  h-full items-center">
+                <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
                     <div className="col-span-1 flex flex-col items-center  text-center">
                         <div className="">
                             <img src={logo} alt='image' className='h-[120px] mx-auto' />
@@ -42,7 +42,7 @@ const Signin = () => {
                     </div>
 
 
-                    <div className="col-span-1 w-full h-full">
+                    <div className="col-span-1 w-full h-full md:block hidden">
                         <img src={signin} alt="Signin" className="w-full h-screen  object-cover" />
                     </div>
                 </div>

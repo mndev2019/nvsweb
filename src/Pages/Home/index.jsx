@@ -25,7 +25,7 @@ const Home = () => {
         <div className="">
 
           <div className="grid lg:grid-cols-12 grid-cols-10">
-            <div className={`fixed top-0 left-0 h-full bg-white shadow-lg z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative col-span-2 overflow-y-auto`}>
+            <div className={`fixed top-0 left-0 h-full bg-white shadow-lg z-50 transform col-span-2 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative col-span-2 overflow-y-auto`}>
               <div className="p-2 lg:hidden block flex justify-end items-end">
                 <IoMdClose
                   className="text-black text-end text-[24px] cursor-pointer"

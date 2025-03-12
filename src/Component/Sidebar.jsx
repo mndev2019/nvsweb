@@ -14,7 +14,7 @@ import share from '../assets/Svg/share.svg'
 import about from '../assets/Svg/aboutus.svg'
 import privacy from '../assets/Svg/privacy.svg'
 import terms from '../assets/Svg/terms.svg'
-import { IoMdArrowDropdown, IoMdArrowDropup } from 'react-icons/io'
+// import { IoMdArrowDropdown, IoMdArrowDropup } from 'react-icons/io'
 
 const Sidebar = () => {
     const location = useLocation();
@@ -27,13 +27,13 @@ const Sidebar = () => {
                 <div className="mt-5 p-2 bg-white rounded-[6px]  flex items-center xl:gap-3 gap-1  border border-gray-100"  >
                     <img src={profilePic} alt="Profile" className="h-12 w-12 rounded-full" />
                     <div className="flex-1">
-                        <h3 className="text-[#001F3F] text-[12px] font-[400] poppins">Meera Saini</h3>
+                        <h3 className="text-[#001F3F] text-[14px] font-[400] poppins">Meera Saini</h3>
                         <p className="text-[12px] font-[400]  text-gray-500">Workspace</p>
                     </div>
-                    <div className="flex flex-col items-center text-primary">
+                    {/* <div className="flex flex-col items-center text-primary">
                         <IoMdArrowDropup className="text-sm" />
                         <IoMdArrowDropdown className="text-sm" />
-                    </div>
+                    </div> */}
                 </div>
                 <ul className="*:py-1  *:text-sm *:font-light *:text-primary">
                     <li>
