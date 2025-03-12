@@ -37,7 +37,7 @@ const Sidebar = () => {
                 </div>
                 <ul className="*:py-1  *:text-sm *:font-light *:text-primary">
                     <li>
-                        <Link to={'/'} className='w-full  text-start block rounded-[6px] '>
+                        <Link to={'/home'} className='w-full  text-start block rounded-[6px] '>
                             <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/home' ? 'bg-[#004080] ' : "bg-white"}`}>
                                 <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
                                     <FiHome className={`text-2xl ${location.pathname === '/home' ? 'text-white' : 'text-gray-400'}`} />
@@ -50,7 +50,7 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
+                        <Link to={'/job'} className='w-full   text-start block rounded-[6px] '>
                             <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
                                 <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
                                     <img src={jobs} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
@@ -62,13 +62,109 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to={'/'} className='w-full  text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
+                        <Link to={'/forum'} className='w-full  text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/forum' ? 'bg-[#004080] ' : "bg-white"}`}>
                                 <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={forum} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
+                                    <img src={forum} alt='jobicon' className={`h-[20px] ${location.pathname === '/forum' ? 'text-white' : 'text-[#535974]'}`} />
                                 </div>
                                 <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Forum</p>
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/forum' ? 'text-white' : 'text-[#535974]'}`}>  Forum</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/inbox'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/inbox' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={inbox} alt='jobicon' className={`h-[20px] ${location.pathname === '/inbox' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/inbox' ? 'text-white' : 'text-[#535974]'}`}>  Inbox</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/friends'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/friends' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={friends} alt='jobicon' className={`h-[20px] ${location.pathname === '/friends' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/friends' ? 'text-white' : 'text-[#535974]'}`}>  Friends</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/profile'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/profile' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={profile} alt='jobicon' className={`h-[20px] ${location.pathname === '/profile' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/profile' ? 'text-white' : 'text-[#535974]'}`}>  Profile</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/manage'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/manage' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={manage} alt='jobicon' className={`h-[20px] ${location.pathname === '/manage' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/manage' ? 'text-white' : 'text-[#535974]'}`}>  Manage Jobs</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/share'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/share' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={share} alt='jobicon' className={`h-[20px] ${location.pathname === '/share' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/share' ? 'text-white' : 'text-[#535974]'}`}>  Share Jobs</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/about'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/about' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={about} alt='jobicon' className={`h-[20px] ${location.pathname === '/about' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/about' ? 'text-white' : 'text-[#535974]'}`}>  About Us</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/privacy'} className='w-full   text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/privacy' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={privacy} alt='jobicon' className={`h-[20px] ${location.pathname === '/privacy' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/privacy' ? 'text-white' : 'text-[#535974]'}`}>  Privacy Policy</p>
+                                </div>
+                            </div>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={'/Terms'} className='w-full  text-start block rounded-[6px] '>
+                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
+                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
+                                    <img src={terms} alt='jobicon' className={`h-[20px] ${location.pathname === '/Terms' ? 'text-white' : 'text-[#535974]'}`} />
+                                </div>
+                                <div className="font-bold text-[15px] text-white ">
+                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/terms' ? 'text-white' : 'text-[#535974]'}`}>  Terms & Conditions</p>
                                 </div>
                             </div>
                         </Link>
@@ -77,103 +173,7 @@ const Sidebar = () => {
                         <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
                             <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
                                 <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={inbox} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Inbox</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={friends} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Friends</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={profile} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Profile</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={manage} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Manage Jobs</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={share} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Share Jobs</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={about} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  About Us</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={privacy} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Privacy Policy</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full  text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                    <img src={terms} alt='jobicon' className={`h-[20px] ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`} />
-                                </div>
-                                <div className="font-bold text-[15px] text-white ">
-                                    <p className={`font-[500] xl:text-[14px] text-[12px]  poppins ${location.pathname === '/job' ? 'text-white' : 'text-[#535974]'}`}>  Terms & Conditions</p>
-                                </div>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/'} className='w-full   text-start block rounded-[6px] '>
-                            <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/job' ? 'bg-[#004080] ' : "bg-white"}`}>
-                                <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                <FiLogOut className='text-[#FD3838] text-[19px]' />
+                                    <FiLogOut className='text-[#FD3838] text-[19px]' />
                                 </div>
                                 <div className="font-bold text-[15px] text-white ">
                                     <p className="font-[500] xl:text-[14px] text-[12px]  poppins text-[#FD3838] ">  Log out</p>
