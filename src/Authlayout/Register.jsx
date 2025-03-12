@@ -68,9 +68,9 @@ const Register = () => {
 
                                                 </select>
                                             </div>
-                                            <div className="flex items-center md:space-x-10 space-x-1 mt-5">
+                                            <div className="flex items-center md:space-x-5 space-x-1 mt-5">
                                                 <div className="text-left ">
-                                                    <label className="text-[#212121] text-[16px] font-[500]">Batch</label>
+                                                    <label className="text-[#212121] text-[16px] font-[500] md:me-3 me-0">Batch</label>
                                                     <select className="w-[150px] py-2 px-3 border border-[#0000001A] rounded-[8px] bg-[#F8F9FB] text-[#212121B2] text-[16px] font-[400] appearance-none">
                                                         <option value="" selected>--</option>
                                                         <option value="2020">2020</option>
@@ -79,9 +79,9 @@ const Register = () => {
                                                     </select>
                                                 </div>
 
-                                                <span className="text-[#212121B2] text-[16px] font-[400] mt-4">To</span>
+                                                <span className="text-[#212121B2] text-[16px] font-[400] md:mt-2 mt-4">To</span>
 
-                                                <div className="text-left mt-5">
+                                                <div className="text-left md:mt-0 mt-5">
                                                     <select className="w-[150px] py-2 px-3 border border-[#0000001A] rounded-[8px] bg-[#F8F9FB] text-[#212121B2] text-[16px] font-[400] appearance-none">
                                                         <option value="" selected>--</option>
                                                         <option value="2023">2023</option>

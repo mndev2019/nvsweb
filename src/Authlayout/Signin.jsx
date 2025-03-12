@@ -35,9 +35,9 @@ const Signin = () => {
                                     <Link to={'/account'}>
                                         Don&apos;t have an account?{" "}
                                     </Link>
-                                    <a href="/" className="text-[#0B067C] font-semibold ">
+                                    <Link to={'/account'} className="text-[#0B067C] font-semibold ">
                                         Sign up
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>

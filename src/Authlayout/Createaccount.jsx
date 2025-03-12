@@ -69,8 +69,8 @@ const Createaccount = () => {
                                         <Link to={'/signin'}>
                                             Already have an account?{" "}
                                         </Link>
-                                        <Link to={'/home'} className="text-[#0B067C] font-semibold ">
-                                            Sign up
+                                        <Link to={'/signin'} className="text-[#0B067C] font-semibold ">
+                                            Sign in
                                         </Link>
                                     </p>
                                 </div>

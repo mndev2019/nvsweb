@@ -9,22 +9,22 @@ const Otp = () => {
     const [otp, setOtp] = useState('');
     return (
         <>
+
             <section className="signin ">
                 <div className="container max-w-full h-full">
-                    <div className="grid md:grid-cols-2 grid-cols-1   h-full items-center">
-                        <div className="col-span-1 flex flex-col items-center  text-center">
-                            <div className="w-full px-5">
+                    <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
+                        <div className="col-span-1 flex flex-col items-center  text-center md:px-0 px-5">
+                            <div className="">
                                 <img src={logo} alt='image' className='md:h-[120px] h-[80px] mx-auto' />
                                 <h2 className='md:text-[30px] text-[20px] inter font-[700] md:mt-8 mt-5'>
                                     OTP Verification
                                 </h2>
-                                <p className='inter text-[18px] font-[400] text-[#8B7C7C] md:py-5 py-3'>
+                                <p className='inter md:text-[18px] text-[14px] font-[400] text-[#8B7C7C] md:py-5 py-3'>
                                     Enter OTP Code sent to your number
                                     <span className='block'>
                                         +9109999555
                                     </span>
                                 </p>
-
                                 <div className="OtpBox">
                                     <OTPInput
                                         value={otp}
@@ -39,8 +39,6 @@ const Otp = () => {
                                         )}
                                     />
                                 </div>
-
-
                                 <div className='mt-10'>
                                     <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={() => navigate('/register')}>Continue</button>
                                 </div>
@@ -49,9 +47,9 @@ const Otp = () => {
                                         <Link to={'/account'}>
                                             Don&apos;t have an account?{" "}
                                         </Link>
-                                        <a href="/signup" className="text-[#0B067C] font-semibold ">
+                                        <Link to={'/account'} className="text-[#0B067C] font-semibold ">
                                             Sign up
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </div>
