@@ -10,24 +10,24 @@ const Register = () => {
     const [selectedStatus, setSelectedStatus] = useState("Serving");
     return (
         <>
-            <section className="signin  overflow-hidden">
-                <div className="container max-w-full h-full">
+            <section className="signin">
+                <div className="container max-w-full mx-auto px-5 h-full">
                     <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
-                        <div className="col-span-1 flex flex-col items-center  text-center">
+                        <div className="col-span-1 flex flex-col  items-center  text-center">
                             <div className=" ">
-                                <img src={logo} alt='image' className='h-[120px] mx-auto' />
+                                <img src={logo} alt='image' className='md:h-[120px] h-[80px] mx-auto' />
                                 <h2 className='md:text-[30px] text-[20px] inter font-[700] md:mt-8 mt-4'>
                                     Register as
                                 </h2>
 
-                                <div className='flex gap-5 mt-4 '>
+                                <div className='flex md:gap-5 gap-2 mt-4 '>
                                     {
                                         ["Alumni", "Faculty", "student"].map((itm, index) => (
                                             <>
                                                 <button
                                                     key={index}
                                                     onClick={() => setActiveButton(itm)}
-                                                    className={`poppins rounded-[90px] flex gap-2 py-1 px-5 items-center transition-all duration-300
+                                                    className={`poppins rounded-[90px] flex gap-2 py-1 md:px-5 px-2 items-center transition-all duration-300
                                                        ${activeButton === itm
                                                             ? "bg-gradient-to-r from-[#D5ECFD] to-[#EFEEEE] text-[#1B3981]"
                                                             : "bg-gradient-to-r from-[#EFEEEE] to-[#EFEEEE] text-[#978C8C]"
@@ -48,7 +48,7 @@ const Register = () => {
                                 {
                                     activeButton == "Alumni" && (
                                         <>
-                                            <div className="mt-5 text-left">
+                                            <div className="mt-5 text-left ">
                                                 <select
                                                     className="w-full py-3 px-3 border border-[#0000001A] rounded-[10px] shadow-[0px_4px_62px_0px_#99ABC62E] bg-gray-100 text-[#212121B2] Inter text-[16px] font-[400]"
                                                 >
@@ -68,8 +68,8 @@ const Register = () => {
 
                                                 </select>
                                             </div>
-                                            <div className="flex items-center space-x-10 mt-5">
-                                                <div className="text-left flex flex-col">
+                                            <div className="flex items-center md:space-x-10 space-x-1 mt-5">
+                                                <div className="text-left ">
                                                     <label className="text-[#212121] text-[16px] font-[500]">Batch</label>
                                                     <select className="w-[150px] py-2 px-3 border border-[#0000001A] rounded-[8px] bg-[#F8F9FB] text-[#212121B2] text-[16px] font-[400] appearance-none">
                                                         <option value="" selected>--</option>
@@ -91,7 +91,7 @@ const Register = () => {
                                                 </div>
                                             </div>
                                             <div className='mt-10'>
-                                                <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={()=> navigate('/home')}>Submit for Approval</button>
+                                                <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={() => navigate('/home')}>Submit for Approval</button>
                                             </div>
                                         </>
                                     )
@@ -99,7 +99,7 @@ const Register = () => {
                                 {
                                     activeButton == "Faculty" && (
                                         <>
-                                            <div className="flex flex-col space-y-4 mb-5">
+                                            <div className=" space-y-4 mb-5">
                                                 {/* Radio Buttons */}
                                                 <div className="flex items-center space-x-6 mt-4">
                                                     {
@@ -164,7 +164,7 @@ const Register = () => {
                                                     )
                                                 }
                                                 <div className='mt-10'>
-                                                    <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={()=> navigate('/home')}>Submit for Approval</button>
+                                                    <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={() => navigate('/home')}>Submit for Approval</button>
                                                 </div>
 
 
@@ -179,7 +179,7 @@ const Register = () => {
                                 {
                                     activeButton == "student" && (
                                         <>
-                                            <p className='inter text-[18px] font-[400] text-[#8B7C7C] mt-5'>
+                                            <p className='inter md:text-[18px] text-[14px] font-[400] text-[#8B7C7C] mt-5'>
                                                 please select the course/program you pursued
                                             </p>
                                             <div className="mt-5 text-left">
@@ -203,7 +203,7 @@ const Register = () => {
                                                 </select>
                                             </div>
                                             <div className='mt-10'>
-                                                <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={()=> navigate('/home')}>Submit for Approval</button>
+                                                <button className='poppins text-[16px] font-[500] rounded-full bg-[#0B067C] w-full text-white py-3' onClick={() => navigate('/home')}>Submit for Approval</button>
                                             </div>
                                         </>
                                     )
