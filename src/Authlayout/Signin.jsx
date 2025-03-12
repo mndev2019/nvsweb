@@ -4,16 +4,16 @@ import { useNavigate } from 'react-router-dom';
 const Signin = () => {
     const navigate = useNavigate();
     return (
-        <section className=" ">
+        <section className="signin ">
             <div className="container max-w-full h-full">
                 <div className="grid md:grid-cols-2 grid-cols-1  h-full items-center">
-                    <div className="col-span-1 flex flex-col items-center  text-center">
+                    <div className="col-span-1 flex flex-col items-center  text-center md:px-0 px-5">
                         <div className="">
-                            <img src={logo} alt='image' className='h-[120px] mx-auto' />
-                            <h2 className='text-[30px] inter font-[700] mt-8'>
+                            <img src={logo} alt='image' className='md:h-[120px] h-[80px] mx-auto' />
+                            <h2 className='md:text-[30px] text-[20px] inter font-[700] mt-8'>
                                 Sign in to your account
                             </h2>
-                            <p className='inter text-[18px] font-[400] text-[#8B7C7C] py-5'>
+                            <p className='inter md:text-[18px] text-[14px] font-[400] text-[#8B7C7C] md:py-5 py-3'>
                                 please confirm your country code and enter
                                 <span className='block'>
                                     your phone number

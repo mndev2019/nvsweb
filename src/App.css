@@ -18,6 +18,11 @@
 .dmsans {
   font-family: "DM Sans", serif;
 }
+@media(max-width:768px){
+  .signin{
+    padding: 97px 0;
+  }
+}
 
 
 /* banner */
