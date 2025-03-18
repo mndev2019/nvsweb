@@ -2,7 +2,11 @@
 import banner from '../../assets/Svg/banner.svg'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import avatar from '../../assets/Image/team4.png'
+import avatar1 from '../../assets/Image/team4.png'
+import avatar2 from '../../assets/Image/team2.png'
+import avatar3 from '../../assets/Image/team3.png'
+import avatar4 from '../../assets/Image/team6.png'
+
 
 const Banner = () => {
 
@@ -15,10 +19,10 @@ const Banner = () => {
                     </div>
                     <div className='flex justify-between items-center mt-4'>
                         <div className='flex -space-x-2'>
-                            {[1, 2, 3, 4].slice(0, 4).map((itm, index) => (
+                            {[avatar1, avatar2, avatar3, avatar4].slice(0, 4).map((itm, index) => (
                                 <img
                                     key={index}
-                                    src={avatar}
+                                    src={itm}
                                     alt='avatar'
                                     className='h-10 w-10 rounded-full border-2 border-white'
                                 />

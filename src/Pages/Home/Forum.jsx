@@ -43,7 +43,7 @@ const Forum = () => {
                         <div className="md:mt-4 mt-3">
                             <h4 className="md:text-[20px] text-[18px] font-[600] inter">Breaking News</h4>
                             <p className="md:text-[14px] text-[12px] inter font-[400] text-[#535974] mt-2 text-justify">
-                                Lorem ipsum dolor sit amet consectetur. Dolor id morbi aliquam praesent nam et consectetur sagittis quam.. Urna cras in libero egestas sit non ac lobortis pellentesque.. Pulvinar semper donec etiam lobortis amet vulputate tellus nisl.. Nibh aliquam faucibus consectetur eget nunc laoreet..
+                                Lorem  ipsum dolor sit amet consectetur. Dolor id morbi aliquam praesent nam et consectetur sagittis quam.. Urna cras in libero egestas sit non ac lobortis pellentesque.. Pulvinar semper donec etiam lobortis amet vulputate tellus nisl.. Nibh aliquam faucibus consectetur eget nunc laoreet..
                             </p>
                         </div>
                         <div className="mt-4">
