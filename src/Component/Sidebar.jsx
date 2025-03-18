@@ -21,11 +21,11 @@ const Sidebar = () => {
     const location = useLocation();
     return (
         <div>
-            <div className="w-full xl:px-5 px-2 lg:py-2 py-1 sidebar h-screen">
+            <div className="w-full xl:px-5 px-2 lg:py-4 py-1 sidebar h-screen">
                 <Link>
                     <img src={logo} alt='logo' className='xl:h-[80px] h-[80px] xl:w-[80px] w-[80px] mx-auto' />
                 </Link>
-                <div className="my-2 px-2 py-1 bg-white rounded-[6px]  flex items-center xl:gap-3 gap-1  border border-gray-100"  >
+                <div className="my-3 px-2 py-1 bg-white rounded-[6px]  flex items-center xl:gap-3 gap-1  border border-gray-100"  >
                     <img src={profilePic} alt="Profile" className="h-12 w-12 rounded-full" />
                     <div className="flex-1">
                         <h3 className="text-[#001F3F] text-[14px] font-[400] poppins">Meera Saini</h3>
@@ -41,7 +41,7 @@ const Sidebar = () => {
                         <Link to={'/home'} className='w-full  text-start block rounded-[6px] '>
                             <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/home' ? 'bg-[#004080] ' : "bg-white"}`}>
                                 <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                <img
+                                    <img
                                         src={home}
                                         alt='jobicon'
                                         className={`h-[20px] transition-all duration-300 ${location.pathname === '/home' ? 'filter brightness-0 invert' : ''}`}
@@ -202,7 +202,7 @@ const Sidebar = () => {
                         <Link to={'/Terms'} className='w-full  text-start block rounded-[6px] '>
                             <div className={`w-full flex gap-2 items-center rounded-[6px] px-2 py-1 ${location.pathname === '/Terms' ? 'bg-[#004080] ' : "bg-white"}`}>
                                 <div className="h-[40px] w-[40px] flex justify-center items-center rounded-md">
-                                <img
+                                    <img
                                         src={terms}
                                         alt='jobicon'
                                         className={`h-[20px] transition-all duration-300 ${location.pathname === '/Terms' ? 'filter brightness-0 invert' : ''}`}
