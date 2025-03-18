@@ -9,6 +9,8 @@ import Otp from './Authlayout/Otp'
 import Createaccount from './Authlayout/Createaccount'
 import Register from './Authlayout/Register'
 
+import Jobs from './Pages/Jobs'
+
 function App() {
   const ThemeRoute = createBrowserRouter(
     createRoutesFromElements(
@@ -16,12 +18,14 @@ function App() {
        <Route path="/" element={<Navigate to="/Signin" />} />
         <Route path='/' element={<WebLayout />}>
         <Route path="/home" element={<Home />} />
+        <Route path='/job' element={<Jobs/>}/>
         </Route>
         <Route element={<Authlayout/>}>
           <Route path='/signin' element={<Signin />} />
           <Route path='/otp' element={<Otp/>}/>
           <Route path='/account' element={<Createaccount/>}/>
           <Route path='/register' element={<Register/>}/>
+          
          
         </Route>
       </>

@@ -59,7 +59,7 @@ const Team = () => {
                                                 />
                                                 <div className="flex flex-col">
                                                     <div className="flex items-center gap-2">
-                                                        <h3 className="font-[500] poppins text-[13px] text-black">Ria Sharma</h3>
+                                                        <h3 className="font-[500] poppins xl:text-[15px] text-[13px] text-black">Ria Sharma</h3>
 
                                                     </div>
                                                     <p className="text-[12px] font-[500] poppins text-[#535974]">{itm.user_name}</p>

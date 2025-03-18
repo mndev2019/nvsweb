@@ -43,15 +43,15 @@ const Events = () => {
                                                 <img src={itm.image} alt='events' className='h-full rounded-[12px] object-cover w-full' />
                                             </div>
                                             <div className="text">
-                                                <h2 className="inter font-[500] text-[12px] mt-3">
+                                                <h2 className="inter font-[500] xl:text-[15px] text-[12px] mt-3">
                                                   {itm.title}
                                                 </h2>
                                                 <div className="flex items-center gap-2 mt-2">
-                                                    <p className="text-[10px] inter font-[400] text-[#535974]">
+                                                    <p className=" xl:text-[12px] text-[10px] inter font-[400] text-[#535974]">
                                                         Business
                                                     </p>
                                                     <span className="w-2 h-[1px] bg-[#20212480]"></span>
-                                                    <p className="text-[10px] inter font-[400] text-[#535974]">
+                                                    <p className="xl:text-[12px] text-[10px] inter font-[400] text-[#535974]">
                                                         March 03, 2025
                                                     </p>
                                                 </div>

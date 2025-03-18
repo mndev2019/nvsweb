@@ -11,6 +11,7 @@ import Forum from "./Forum"
 import News from "./News"
 import Team from './Team'
 import { IoMdClose } from "react-icons/io"
+import Mobileteammembers from "./Mobileteammembers"
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,8 +26,11 @@ const Home = () => {
         <div className="">
 
           <div className="grid lg:grid-cols-12 grid-cols-10">
-            <div className={`fixed top-0 left-0 h-full bg-white shadow-lg z-50 transform col-span-2 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative col-span-2 overflow-y-auto`}>
-              <div className="p-2 lg:hidden block flex justify-end items-end">
+            <div className={`bg-white shadow-lg z-50 transform col-span-2 
+              ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
+              transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative 
+                 fixed top-0 left-0 h-full lg:h-screen lg:sticky lg:top-0 overflow-y-auto`}>
+              <div className="p-2 lg:hidden  flex justify-end items-end">
                 <IoMdClose
                   className="text-black text-end text-[24px] cursor-pointer"
                   onClick={toggleSidebar}
@@ -39,6 +43,7 @@ const Home = () => {
               <div className="grid lg:grid-cols-12 grid-cols-1">
                 <div className="lg:col-span-8 col-span-1">
                   <Banner />
+                  <Mobileteammembers />
                   <Forum />
 
                 </div>
