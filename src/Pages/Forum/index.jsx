@@ -1,20 +1,23 @@
-import { useState } from 'react'
+// import React from 'react'
+
 import { IoMdClose } from "react-icons/io"
 import Sidebar from "../../Component/Sidebar"
 import Topheader from "../../Component/Topheader"
+import { useState } from "react";
+// import forum from "../Home/Forum"
+import Forumbox from "./Forumbox";
 
-import Jobmodal from './Jobmodal'
-const Jobs = () => {
+const Forum = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [isPopupOpen, setIsPopupOpen] = useState(true);
-
-    const toggleSidebar = () => {
+    
+      const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
-    };
+      };
     return (
         <>
             <section className="">
                 <div className="">
+
                     <div className="grid lg:grid-cols-12 grid-cols-10">
                         <div className={`bg-white shadow-lg z-50 transform col-span-2 
               ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
@@ -30,15 +33,15 @@ const Jobs = () => {
                         </div>
                         <div className="col-span-10 bg-[#f8f4fc] ">
                             <Topheader toggleSidebar={toggleSidebar} />
+                            <div className="p-4">
+                                <Forumbox/>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </section>
-            {/* Show Modal */}
-            {isPopupOpen && <Jobmodal isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />}
         </>
     )
 }
 
-export default Jobs
+export default Forum

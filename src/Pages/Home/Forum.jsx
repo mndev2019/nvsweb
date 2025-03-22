@@ -63,8 +63,6 @@ const Forum = () => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </section>
         </>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
 
 import { Link, useLocation } from 'react-router-dom'
@@ -17,10 +18,10 @@ import terms from '../assets/Svg/terms.svg'
 import home from '../assets/Svg/home.svg'
 
 
-const Sidebar = () => {
+const Sidebar = ({ setIsPopupOpen }) => {
     const menuItems = [
         { name: 'Home', path: '/home', icon: home },
-        { name: 'Jobs', path: '/job', icon: jobs },
+        { name: 'Jobs', path: '/job', icon: jobs, onClick: () => setIsPopupOpen(true)},
         { name: 'Forum', path: '/forum', icon: forum },
         { name: 'Inbox', path: '/inbox', icon: inbox },
         { name: 'Friends', path: '/friends', icon: friends },

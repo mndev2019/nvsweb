@@ -27,7 +27,7 @@ const Banner = () => {
                                     className='h-10 w-10 rounded-full border-2 border-white'
                                 />
                             ))}
-                            <div className='h-10 w-10 rounded-full bg-white border-2 border-white flex items-center justify-center text-sm text-[#535974]'>
+                            <div className='h-10 w-10 rounded-full bg-white border-2 border-[#DDE2E4] flex items-center justify-center text-sm text-[#535974] font-semibold'>
                                 +9
                             </div>
                         </div>
