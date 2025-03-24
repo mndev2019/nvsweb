@@ -1,7 +1,7 @@
 // import React from 'react'
 
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 import { useState } from "react";
 import { FiEdit } from "react-icons/fi"
@@ -12,8 +12,9 @@ import Topheader from "../../Component/Topheader"
 
 
 
+
 const Postjob = () => {
-    const [description, setDescription] = useState("");
+    // const [data, setData] = useState("");
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
@@ -25,7 +26,7 @@ const Postjob = () => {
                     <div className="grid lg:grid-cols-12 grid-cols-10">
                         <div className={`bg-white shadow-lg z-50 transform col-span-2 
                              ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
-                                transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative 
+                                transition-transform duration-300 ease-in-out lg:translate-x-0 
                                    fixed top-0 left-0 h-full lg:h-screen lg:sticky lg:top-0 overflow-y-auto`}>
                             <div className="p-2 lg:hidden  flex justify-end items-end">
                                 <IoMdClose
@@ -99,16 +100,19 @@ const Postjob = () => {
                                         </div>
 
                                         {/* CKEditor for Job Description */}
-                                        <div className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] border border-[#0000001A] rounded-md bg-white p-2">
-                                            <CKEditor
+                                        {/* <div className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] border border-[#0000001A] rounded-md bg-white p-2"> */}
+                                            {/* <CKEditor
                                                 editor={ClassicEditor}
-                                                data={description}
-                                                onChange={(event, editor) => {
-                                                    const data = editor.getData();
-                                                    setDescription(data);
-                                                }}
-                                            />
-                                        </div>
+                                                data={data}
+                                                onChange={(event, editor) => setData(editor.getData())}
+                                            /> */}
+                                             <input
+                                            type="text"
+                                            placeholder="Enter Job Description"
+                                            className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
+
+                                        />
+                                        {/* </div> */}
                                     </div>
                                     <div className="col-span-2 mb-5">
 
