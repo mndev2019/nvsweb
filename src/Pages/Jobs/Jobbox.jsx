@@ -28,7 +28,7 @@ const Jobbox = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <BsBookmark className='text-[#ACB2B9] md:text-[27px] text-[20px]' />
+                                            <BsBookmark className='text-[#ACB2B9] md:text-[23px] text-[20px]' />
                                         </div>
                                     </div>
                                     <p className='text-[#626263] md:text-[15px] text-[12px] text-justify font-[400] poppins py-4 border-b border-[#ACB2B999]'>

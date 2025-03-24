@@ -2,11 +2,14 @@
 
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+
 import { useState } from "react";
 import { FiEdit } from "react-icons/fi"
 import { IoIosArrowBack, IoMdClose } from "react-icons/io";
 import Sidebar from "../../Component/Sidebar"
 import Topheader from "../../Component/Topheader"
+
+
 
 
 const Postjob = () => {
@@ -84,7 +87,7 @@ const Postjob = () => {
                                         <input
                                             type="text"
                                             placeholder="Enter Job Title"
-                                            className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
+                                            className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
 
                                         />
                                     </div>
@@ -119,14 +122,14 @@ const Postjob = () => {
 
                                             <div>
                                                 <label className="block text-[14px] text-black font-[500] poppins mb-1">State</label>
-                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
+                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
                                                     <option>Select State</option>
 
                                                 </select>
                                             </div>
                                             <div>
                                                 <label className="block text-[14px] text-black font-[500] poppins mb-1">City</label>
-                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
+                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
                                                     <option>Select City</option>
 
                                                 </select>
@@ -141,7 +144,7 @@ const Postjob = () => {
                                         <input
                                             type="text"
                                             placeholder="Enter Pincode"
-                                            className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
+                                            className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
 
                                         />
                                     </div>
@@ -156,7 +159,7 @@ const Postjob = () => {
 
                                             <div>
                                                 <label className="block md:text-[14px] text-[12px] text-black font-[500] poppins mb-1">Qualification</label>
-                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
+                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
                                                     <option>Select Qualification</option>
 
                                                 </select>
@@ -166,7 +169,7 @@ const Postjob = () => {
                                                 <input
                                                     type="text"
                                                     placeholder="Enter Experience"
-                                                    className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
+                                                    className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
 
                                                 />
                                             </div>
@@ -186,7 +189,7 @@ const Postjob = () => {
                                                 <input
                                                     type="text"
                                                     placeholder="Enter Number of Opening"
-                                                    className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
+                                                    className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
 
                                                 />
                                             </div>
@@ -195,20 +198,20 @@ const Postjob = () => {
                                                 <input
                                                     type="text"
                                                     placeholder="Enter Salary Range (Optional)"
-                                                    className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
+                                                    className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
 
                                                 />
                                             </div>
                                             <div className="col-span-1">
                                                 <label className="block md:text-[14px] text-[12px] text-black font-[500] poppins mb-1">Day Shift</label>
-                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
+                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
                                                     <option>Select Day Shift</option>
 
                                                 </select>
                                             </div>
                                             <div className="col-span-1">
                                                 <label className="block md:text-[14px] text-[12px] text-black font-[500] poppins mb-1">Type of Job</label>
-                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppinsmd:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
+                                                <select className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]">
                                                     <option>Select</option>
 
                                                 </select>

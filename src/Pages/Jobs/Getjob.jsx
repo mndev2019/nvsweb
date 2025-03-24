@@ -8,12 +8,17 @@ import { LuBriefcaseBusiness } from "react-icons/lu"
 import Jobbox from "./Jobbox"
 import Sidebar from "../../Component/Sidebar"
 import Topheader from "../../Component/Topheader"
+import { FaFilter } from 'react-icons/fa'
 
 
 const Getjob = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [showFilter, setshowFilter] = useState(false); // Filter sidebar state
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
+    };
+    const toggleFilter = () => {
+        setshowFilter(!showFilter);
     };
     return (
         <>
@@ -95,14 +100,19 @@ const Getjob = () => {
                                     </div>
 
                                 </div>
-                                <div className="grid grid-cols-12 mt-9 gap-4 ">
-                                    <div className="col-span-3 md:block hidden">
+                                <div className="grid grid-cols-1 lg:hidden block">
+                                    <div className="col-span-1 py-5 justify-items-end">
+                                        <FaFilter className='text-[#004080] text-xl' onClick={toggleFilter} />
+                                    </div>
+                                </div>
+                                <div className="grid grid-cols-12 lg:mt-9 mt-0 gap-4 ">
+                                    {/* <div className="col-span-3 md:block hidden">
                                         <h2 className="text-lg font-semibold mb-4">Filter</h2>
                                         <div className="bg-white p-4 shadow-lg rounded-lg w-full">
 
 
 
-                                            {/* Salary Range */}
+                                       
                                             <div className="mb-4 ">
                                                 <label className="text-[14px] font-[600] poppins">Salary Range</label>
                                                 <div className="flex gap-2 mt-2">
@@ -119,7 +129,7 @@ const Getjob = () => {
                                                 </div>
                                             </div>
 
-                                            {/* Job Type */}
+                                          
                                             <div className="pb-4 border-b border-[#ACB2B999] pt-3">
                                                 <label className="text-[14px] font-[600] poppins">Job Type</label>
                                                 <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
@@ -132,7 +142,7 @@ const Getjob = () => {
                                                 </div>
                                             </div>
 
-                                            {/* Work Mode */}
+                                        
                                             <div className="pb-4 border-b border-[#ACB2B999] pt-3">
                                                 <label className="text-[14px] font-[600] poppins ">Work Mode</label>
                                                 <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
@@ -145,7 +155,7 @@ const Getjob = () => {
                                                 </div>
                                             </div>
 
-                                            {/* Job Function */}
+                                          
                                             <div className="pb-4 border-b border-[#ACB2B999] pt-3">
                                                 <label className="text-[14px] font-[600] poppins">Job Functions</label>
                                                 <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
@@ -158,7 +168,7 @@ const Getjob = () => {
                                                 </div>
                                             </div>
 
-                                            {/* Experience Level */}
+                                        
                                             <div className="pb-4 border-b border-[#ACB2B999]">
                                                 <label className="text-[14px] font-[600] poppins">Experience Level</label>
                                                 <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
@@ -171,7 +181,92 @@ const Getjob = () => {
                                                 </div>
                                             </div>
 
-                                            {/* Buttons */}
+                                     
+                                            <div className="mt-4">
+                                                <button className="w-full bg-[#004080] text-white py-2 rounded text-sm font-medium poppins">
+                                                    Apply
+                                                </button>
+                                                <button className="w-full mt-2 bg-gray-200 py-2 rounded text-sm font-medium poppins">
+                                                    Clear
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    <div className={`fixed top-0 right-0 h-full w-3/4 sm:w-2/4 md:w-1/3  transform 
+                                     ${showFilter ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out 
+                                        lg:relative lg:translate-x-0 lg:w-full lg:col-span-3 lg:block lg:bg-transparent bg-white lg:p-0 p-4`}>
+
+                                        {/* Close Button for Small Screens */}
+                                        <div className="p-2 lg:hidden flex justify-end">
+                                            <IoMdClose
+                                                className="text-[20px] text-[#004080] cursor-pointer"
+                                                onClick={toggleFilter}
+                                            />
+                                        </div>
+
+                                        <h2 className="text-lg font-semibold mb-4">Filter</h2>
+                                        <div className="bg-white p-4 shadow-lg rounded-lg w-full">
+                                            {/* Salary Range */}
+                                            <div className="mb-4">
+                                                <label className="text-[14px] font-[600] poppins">Salary Range</label>
+                                                <div className="flex gap-2 mt-2">
+                                                    <input type="text" placeholder="Min" className="border border-[#DDE2E4] p-2 rounded w-full text-[14px] inter font-[400]" />
+                                                    <input type="text" placeholder="Max" className="border border-[#DDE2E4] p-2 rounded w-full text-[14px] inter font-[400]" />
+                                                </div>
+                                            </div>
+
+                                            <div className="pb-4 border-b border-[#ACB2B999] pt-3">
+                                                <label className="text-[14px] font-[600] poppins">Job Type</label>
+                                                <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
+                                                    {["Full-Time (654)", "Part-Time (124)", "Internship (204)", "Contract (32)"].map((type, index) => (
+                                                        <label key={index} className="flex items-center space-x-2">
+                                                            <input type="checkbox" className="accent-[#004080]" />
+                                                            <span>{type}</span>
+                                                        </label>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+
+                                            <div className="pb-4 border-b border-[#ACB2B999] pt-3">
+                                                <label className="text-[14px] font-[600] poppins ">Work Mode</label>
+                                                <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
+                                                    {["On-Site", "Remote", "Hybrid (203)"].map((mode, index) => (
+                                                        <label key={index} className="flex items-center space-x-2">
+                                                            <input type="checkbox" className="accent-[#004080]" />
+                                                            <span>{mode}</span>
+                                                        </label>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+
+                                            <div className="pb-4 border-b border-[#ACB2B999] pt-3">
+                                                <label className="text-[14px] font-[600] poppins">Job Functions</label>
+                                                <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
+                                                    {["Marketing (8)", "Technology (14)", "Design (10)", "Sales (7)", "Customer Service (9)"].map((func, index) => (
+                                                        <label key={index} className="flex items-center space-x-2">
+                                                            <input type="checkbox" className="accent-[#004080]" />
+                                                            <span>{func}</span>
+                                                        </label>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+
+                                            <div className="pb-4 border-b border-[#ACB2B999]">
+                                                <label className="text-[14px] font-[600] poppins">Experience Level</label>
+                                                <div className="flex flex-col mt-2 text-[14px] font-[400] text-[#626263] poppins">
+                                                    {["Entry-Level (289)", "Mid-Level (122)", "Senior-Level (34)", "Leadership/Executive (20)"].map((exp, index) => (
+                                                        <label key={index} className="flex items-center space-x-2">
+                                                            <input type="checkbox" className="accent-[#004080]" />
+                                                            <span>{exp}</span>
+                                                        </label>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+
                                             <div className="mt-4">
                                                 <button className="w-full bg-[#004080] text-white py-2 rounded text-sm font-medium poppins">
                                                     Apply
@@ -182,7 +277,7 @@ const Getjob = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="md:col-span-9 col-span-12">
+                                    <div className="lg:col-span-9 col-span-12">
                                         <Jobbox />
                                     </div>
                                 </div>
