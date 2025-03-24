@@ -101,12 +101,12 @@ const Postjob = () => {
 
                                         {/* CKEditor for Job Description */}
                                         {/* <div className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] border border-[#0000001A] rounded-md bg-white p-2"> */}
-                                            {/* <CKEditor
+                                        {/* <CKEditor
                                                 editor={ClassicEditor}
                                                 data={data}
                                                 onChange={(event, editor) => setData(editor.getData())}
                                             /> */}
-                                             <input
+                                        <input
                                             type="text"
                                             placeholder="Enter Job Description"
                                             className="shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] poppins md:text-[15px] text-[12px] font-[400] w-full md:p-3 p-2  border  border-[#0000001A] bg-white rounded-md outline-none focus:ring-2 focus:ring-[#004080]"
