@@ -13,7 +13,7 @@ import { FaFilter } from 'react-icons/fa'
 
 const Getjob = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [showFilter, setshowFilter] = useState(false); // Filter sidebar state
+    const [showFilter, setshowFilter] = useState(false); 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
@@ -56,7 +56,7 @@ const Getjob = () => {
                                         </div>
                                     </div>
                                     <div className="col-span-1">
-                                        <div className="bg-white shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] rounded-lg mt-6 p-3 flex flex-col md:flex-row md:items-center gap-4 max-w-[90%] md:max-w-[65%] mx-auto">
+                                        <div className="bg-white shadow-[0px_4px_62px_0px_rgba(153,171,198,0.18)] rounded-lg mt-6 p-3 flex flex-col md:flex-row md:items-center gap-4 max-w-[90%] xl:max-w-[75%] lg:max-w-[85%] mx-auto">
 
                                             {/* Job Title Input - First Line */}
                                             <div className="flex items-center border-b md:border-b-0 md:border-r border-[#626263] pb-2 md:pb-0 pr-4 w-full md:w-1/3">
@@ -100,8 +100,11 @@ const Getjob = () => {
                                     </div>
 
                                 </div>
-                                <div className="grid grid-cols-1 lg:hidden block">
-                                    <div className="col-span-1 py-5 justify-items-end">
+                                <div className="grid grid-cols-1 lg:hidden block ">
+                                    <div className="col-span-1 py-5 justify-items-end justify-between flex">
+                                        <p className='text-lg poppins font-semibold'>
+                                            Filter
+                                        </p>
                                         <FaFilter className='text-[#004080] text-xl' onClick={toggleFilter} />
                                     </div>
                                 </div>
@@ -194,7 +197,7 @@ const Getjob = () => {
                                     </div> */}
                                     <div className={`fixed top-0 right-0 h-full w-3/4 sm:w-2/4 md:w-1/3  transform 
                                      ${showFilter ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out 
-                                        lg:relative lg:translate-x-0 lg:w-full lg:col-span-3 lg:block lg:bg-transparent bg-white lg:p-0 p-4`}>
+                                        lg:relative lg:translate-x-0 lg:w-full lg:col-span-3 lg:block lg:bg-transparent lg:overflow-y-auto overflow-y-scroll bg-white lg:p-0 p-4`}>
 
                                         {/* Close Button for Small Screens */}
                                         <div className="p-2 lg:hidden flex justify-end">
@@ -210,8 +213,8 @@ const Getjob = () => {
                                             <div className="mb-4">
                                                 <label className="text-[14px] font-[600] poppins">Salary Range</label>
                                                 <div className="flex gap-2 mt-2">
-                                                    <input type="text" placeholder="Min" className="border border-[#DDE2E4] p-2 rounded w-full text-[14px] inter font-[400]" />
-                                                    <input type="text" placeholder="Max" className="border border-[#DDE2E4] p-2 rounded w-full text-[14px] inter font-[400]" />
+                                                    <input type="text" placeholder="Min" className="border border-[#DDE2E4] p-2 rounded w-full text-[14px] inter font-[400] focus:outline-none focus:ring-2 focus:ring-[#004080]" />
+                                                    <input type="text" placeholder="Max" className="border border-[#DDE2E4] p-2 rounded w-full text-[14px] inter font-[400] focus:outline-none focus:ring-2 focus:ring-[#004080]" />
                                                 </div>
                                             </div>
 
@@ -268,10 +271,10 @@ const Getjob = () => {
 
 
                                             <div className="mt-4">
-                                                <button className="w-full bg-[#004080] text-white py-2 rounded text-sm font-medium poppins">
+                                                <button className="w-full bg-[#004080] text-white py-2 rounded text-sm font-medium poppins" onClick={toggleFilter}>
                                                     Apply
                                                 </button>
-                                                <button className="w-full mt-2 bg-gray-200 py-2 rounded text-sm font-medium poppins">
+                                                <button className="w-full mt-2 bg-gray-200 py-2 rounded text-sm font-medium poppins" onClick={toggleFilter}>
                                                     Clear
                                                 </button>
                                             </div>
