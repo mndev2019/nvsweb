@@ -26,7 +26,7 @@ const Sidebar = ({ setIsPopupOpen }) => {
         { name: 'Inbox', path: '/inbox', icon: inbox },
         { name: 'Friends', path: '/friends', icon: friends },
         { name: 'Profile', path: '/profile', icon: profile },
-        { name: 'Manage Jobs', path: '/manage', icon: manage },
+        { name: 'Manage Jobs', path: '/managejob', icon: manage },
         { name: 'Share Jobs', path: '/share', icon: share },
         { name: 'About Us', path: '/about', icon: about },
         { name: 'Privacy Policy', path: '/privacy', icon: privacy },

@@ -3,8 +3,10 @@ import { BsBookmark } from 'react-icons/bs'
 import job from '../../assets/Image/job.png'
 import { TiLocation } from 'react-icons/ti'
 import { FaClock } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 const Jobbox = () => {
+    const navigate = useNavigate();
     return (
         <>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
@@ -51,7 +53,7 @@ const Jobbox = () => {
                                         </div>
                                     </div>
                                     <div className='w-full flex gap-4 md:mt-3 mt-2'>
-                                        <button className='w-full poppins font-[600] md:text-[15px] text-[12px] border border-[#110B08] rounded-[6px] md:px-3 px-2 py-2  cursor-pointer'>
+                                        <button className='w-full poppins font-[600] md:text-[15px] text-[12px] border border-[#110B08] rounded-[6px] md:px-3 px-2 py-2  cursor-pointer' onClick={()=> navigate('/jobdetails')}>
                                             View Details
                                         </button>
                                         <button className='w-full poppins font-[600] md:text-[15px] text-[12px] bg-[#004080] text-white rounded-[6px] md:px-3 px-2 py-2 cursor-pointer'>

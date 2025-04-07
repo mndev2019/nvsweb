@@ -26,7 +26,7 @@ const Home = () => {
         <div className="">
 
           <div className="grid lg:grid-cols-12 grid-cols-10">
-            <div className={`bg-white shadow-lg z-50 transform col-span-2 
+            <div className={`bg-white shadow-lg z-50 transform col-span-2 custom-scrollbar 
               ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
               transition-transform duration-300 ease-in-out lg:translate-x-0 lg:relative 
                  fixed top-0 left-0 h-full lg:h-screen lg:sticky lg:top-0 overflow-y-auto`}>

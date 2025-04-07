@@ -1,5 +1,4 @@
 import Titlecomp from '../../Component/Titlecomp';
-
 import news1 from '../../assets/Image/news1.png';
 import news2 from '../../assets/Image/news2.png';
 import news3 from '../../assets/Image/news3.png';
@@ -19,7 +18,7 @@ const News = () => {
             image: news3,
             title: "Exploring the latest developments in AI, Robotics",
         },
-       
+
     ];
 
     return (
@@ -34,7 +33,7 @@ const News = () => {
                                     <p className="inter font-[600] md:text-[18px] text-[15px] text-[#0B067C]">
                                         See All
                                     </p>
-                                    
+
                                 </div>
                             </div>
                         </div>
